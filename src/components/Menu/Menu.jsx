@@ -1,11 +1,15 @@
 import React from "react";
 
-import {Link} from "react-router-dom";
+import {Link, useHistory, useParams} from "react-router-dom";
 
 import { FiHome, FiTrendingUp } from "react-icons/fi";
 import "./Menu.css";
 
 const Menu = () => {
+  const params = useParams();
+  const history = useHistory();
+  console.log(history.location.pathname)
+  
   return (
     <div className="menu">
       <h1 className="logo-name">
@@ -13,14 +17,15 @@ const Menu = () => {
       </h1>
       <div className="menu-container">
         <ul>
-          <Link to="/">
-            <li className={`icons-container`}>
+          <Link to="/" >
+            <li className={`icons-container ${history.location.pathname === '/' ? 'Page' : ''}`}>
               <FiHome className="icons" />
               <p className="icons-name">Home</p>
+              
             </li>
           </Link>
           <Link to="/organize">
-            <li className={`icons-container`} >
+            <li className={`icons-container ${history.location.pathname === '/organize' ? 'Organize' : ''}`}>
               <FiTrendingUp className="icons" />
               <p className="icons-name">Organize</p>
             </li>

@@ -1,5 +1,17 @@
 .home-container{
     height: 100vh;
     width: calc(100vw - 18vw);
-    background: rgb(197, 183, 183);
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 5rem;
+}
+
+.home-phrase{
+    font-size: 86px;
+    display: flex;
+    align-items: center;
+}
+
+.phrase-money{
+    color: #1CC8EE;
 }
