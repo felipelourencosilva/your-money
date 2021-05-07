@@ -1,0 +1,5 @@
+.organize-container{
+    height: 100vh;
+    width: calc(100vw - 18vw);
+    background: rgb(126, 114, 114);
+}

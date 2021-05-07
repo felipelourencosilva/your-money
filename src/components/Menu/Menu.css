@@ -1,0 +1,57 @@
+.menu{
+    height: 100vh;
+    width: 18vw;
+    background: #E7E8EE;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo-name{
+    font-size: 36px;
+    letter-spacing: -0.04em;
+    color: #14142A;
+    padding: 3vw;
+    margin-bottom: 15px;
+}
+
+.money{
+    color: #00BA88;
+}
+
+.menu-container{
+    width: 100;
+}
+
+.icons-container{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    font-size: 26px;
+    color: #6E7191;
+    padding-left: 3vw;
+}
+
+.icons-container:hover{
+    background: #D9DAE1;
+    border-radius: 15px;
+    color: #14142A;
+}
+
+.icons-name{
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.icons{
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.Page{
+    background: #D9DAE1;
+    border-radius: 15px;
+    color: #14142A;
+    border-right: 12px solid #1CC8EE;
+}
