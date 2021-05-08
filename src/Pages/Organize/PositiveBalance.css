@@ -1,0 +1,21 @@
+.positive-balance{
+    width: 350px;
+    height: 80px;
+    background: #E7E8EE;
+    border-radius: 10px;
+    border-bottom: 5px solid #00BA88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #6E7191;
+    margin-top: 30px;
+    padding: 0rem 2rem;
+}
+
+.us-positive{
+    position: absolute;
+    color: #00BA88;
+    font-size: 26px;
+    transform: translateX(-8rem);
+}

@@ -1,3 +1,7 @@
 .App{
     display: flex;
 }
+.organize-app{
+    display: flex;
+    flex-direction: column;
+}

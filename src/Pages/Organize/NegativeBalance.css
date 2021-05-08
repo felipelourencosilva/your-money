@@ -1,0 +1,21 @@
+.negative-balance{
+    width: 350px;
+    height: 80px;
+    background: #E7E8EE;
+    border-radius: 10px;
+    border-bottom: 5px solid #ED2E7E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #6E7191;
+    margin-top: 30px;
+    padding: 0rem 2rem;
+}
+
+.us-negative{
+    position: absolute;
+    color: #ED2E7E;
+    font-size: 26px;
+    transform: translateX(-8rem);
+}
