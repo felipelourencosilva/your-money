@@ -5,17 +5,22 @@
     border-radius: 10px;
     border-bottom: 5px solid #ED2E7E;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 32px;
     color: #6E7191;
     margin-top: 30px;
     padding: 0rem 2rem;
+    cursor: default;
 }
 
 .us-negative{
-    position: absolute;
     color: #ED2E7E;
     font-size: 26px;
-    transform: translateX(-8rem);
+    cursor: default;
+}
+
+.negative-x{
+    color: #ED2E7E;
+    cursor: pointer;
 }

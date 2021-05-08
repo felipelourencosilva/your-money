@@ -5,7 +5,7 @@ import NegativeBalance from "./NegativeBalance";
 
 import "./Balances.css";
 
-const Balances = ({ positiveBalances, negativeBalances }) => {
+const Balances = ({ positiveBalances, negativeBalances, handleDeleteBalance }) => {
   return (
     <div className="balances-container">
       <div className="balances">
@@ -14,6 +14,7 @@ const Balances = ({ positiveBalances, negativeBalances }) => {
             <PositiveBalance
               positiveBalance={positiveBalance}
               key={positiveBalance.id}
+              handleDeleteBalance={handleDeleteBalance}
             />
           ))}
         </div>
@@ -23,6 +24,7 @@ const Balances = ({ positiveBalances, negativeBalances }) => {
             <NegativeBalance
               negativeBalance={negativeBalance}
               key={negativeBalance.id}
+              handleDeleteBalance={handleDeleteBalance}
             />
           ))}
         </div>

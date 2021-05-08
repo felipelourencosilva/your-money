@@ -7,21 +7,21 @@ import PositiveBalance from "./PositiveBalance";
 
 const Organize = ({handleAddBalance}) => {
 
-  const [inputDataAmount, setInputDataAmount] = useState("")
-  const [inputDataDescription, setInputDataDescription] = useState("")
+  const [inputAmount, setInputAmount] = useState("")
+  const [inputDescription, setInputDescription] = useState("")
 
     const handleInputChangeAmount = (e) => {
-      setInputDataAmount(e.target.value)
+      setInputAmount(e.target.value)
     }
 
     const handleInputChangeDescription = (e) => {
-      setInputDataDescription(e.target.value)
+      setInputDescription(e.target.value)
     }
 
     const handleAddBalanceClick = () => {
-      handleAddBalance(inputDataAmount, inputDataDescription)
-      setInputDataAmount('')
-      setInputDataDescription('')
+      handleAddBalance(inputAmount, inputDescription)
+      setInputAmount('')
+      setInputDescription('')
     }
 
   return (
@@ -35,7 +35,7 @@ const Organize = ({handleAddBalance}) => {
           </div>
           <div className="add-amount">
             <div className="amount-and-button">
-              <input onChange={handleInputChangeAmount} className="amount" type="number" placeholder="Amount" />
+              <input onChange={handleInputChangeAmount} className="amount" type="number" value={inputAmount} placeholder="Amount" />
               <button onClick={handleAddBalanceClick} className="button">+</button>
             </div>
             <input
@@ -43,6 +43,7 @@ const Organize = ({handleAddBalance}) => {
               className="add-description"
               type="text"
               placeholder="Add a description"
+              value={inputDescription}
             />
           </div>
         </div>

@@ -40,6 +40,11 @@ function App() {
     setBalances(newBalance)
   }
 
+  const handleDeleteBalance = (balanceId) => {
+    const newBalance = balances.filter(balance => balance.id !== balanceId);
+    setBalances(newBalance)
+  }
+
   return (
     <Router>
       <div className="App">
@@ -52,7 +57,7 @@ function App() {
             render={() => (
               <div className="organize-app">
                 <Organize handleAddBalance={handleAddBalance} />
-                <Balances positiveBalances={positiveBalances} negativeBalances={negativeBalances} />
+                <Balances positiveBalances={positiveBalances} negativeBalances={negativeBalances} handleDeleteBalance={handleDeleteBalance} />
               </div>
             )}
           

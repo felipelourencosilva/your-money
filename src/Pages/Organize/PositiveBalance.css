@@ -5,17 +5,22 @@
     border-radius: 10px;
     border-bottom: 5px solid #00BA88;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 32px;
     color: #6E7191;
     margin-top: 30px;
     padding: 0rem 2rem;
+    cursor: default;
 }
 
 .us-positive{
-    position: absolute;
     color: #00BA88;
     font-size: 26px;
-    transform: translateX(-8rem);
+    cursor: default;
+}
+
+.positive-x{
+    color: #00BA88;
+    cursor: pointer;
 }
