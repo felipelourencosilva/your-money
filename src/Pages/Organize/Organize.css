@@ -42,6 +42,7 @@
     margin-right: 25px;
     font-size: 24px;
     color: #6E7191;
+    font-family: 'Poppins', sans-serif;
 }
 
 .amount::placeholder{
@@ -70,6 +71,7 @@
     padding-left: 20px;
     font-size: 24px;
     color: #6E7191;
+    font-family: 'Poppins', sans-serif;
 }
 
 .add-description::placeholder{
