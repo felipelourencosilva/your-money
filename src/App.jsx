@@ -4,6 +4,7 @@ import Menu from "./components/Menu/Menu";
 import Home from "./Pages/Home/Home";
 import Organize from "./Pages/Organize/Organize";
 import Balances from "./Pages/Organize/Balances";
+import Amount from "./Pages/Organize/Amount";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
@@ -73,6 +74,7 @@ function App() {
               </div>
             )}
           />
+          <Route path="/:amount" exact component={Amount} positiveBalances={positiveBalances} negativeBalances={negativeBalances} />
         </Switch>
       </div>
     </Router>
