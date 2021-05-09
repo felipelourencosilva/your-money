@@ -15,3 +15,17 @@
 .phrase-money{
     color: #1CC8EE;
 }
+
+.photos-links{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    font-size: 24px;
+    color: #6E7191;
+}
+
+.photo-link{
+    color: #A0A3BD;
+    font-size: 16px;
+    margin-left: 20px;
+}
