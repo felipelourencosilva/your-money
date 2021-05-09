@@ -5,7 +5,7 @@ import NegativeBalance from "./NegativeBalance";
 
 import "./Balances.css";
 
-const Balances = ({ positiveBalances, negativeBalances, handleDeleteBalance }) => {
+const Balances = ({ positiveBalances, negativeBalances, handleDeleteBalance}) => {
   return (
     <div className="balances-container">
       <div className="balances">

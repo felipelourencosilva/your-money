@@ -5,7 +5,8 @@ import Balances from "./Balances";
 import "./Organize.css";
 import PositiveBalance from "./PositiveBalance";
 
-const Organize = ({handleAddBalance}) => {
+const Organize = ({handleAddBalance, totalAmount, Amounts}) => {
+
 
   const [inputAmount, setInputAmount] = useState("")
   const [inputDescription, setInputDescription] = useState("")
@@ -29,8 +30,8 @@ const Organize = ({handleAddBalance}) => {
         <div className="organize">
           <div className="your-balance-container">
             <p className="your-balance">Your Balance:</p>
-            <p className="your-money">
-              <span className="money-us">U$</span> 247.36
+            <p onClick={totalAmount} className="your-money">
+              <span className="money-us">U$</span> {Amounts}
             </p>
           </div>
           <div className="add-amount">
