@@ -36,9 +36,20 @@
 
 }
 
-.itens-amount div{
+.params-amount{
     display: flex;
     align-items: center;
+    cursor: default;
+}
+
+.amount-and-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.params-description{
+    color: #A0A3BD;
+    font-size: 24px;
     cursor: default;
 }
 

@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 
-import Balances from "./Balances";
-
 import "./Organize.css";
-import PositiveBalance from "./PositiveBalance";
 
 const Organize = ({handleAddBalance, totalAmount, Amounts}) => {
 

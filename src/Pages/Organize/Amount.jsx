@@ -5,7 +5,7 @@ import { FiArrowLeft } from "react-icons/fi";
 
 import './Amount.css'
 
-const Amount = ({positiveBalances, negativeBalances}) => {
+const Amount = ({}) => {
 
     const params = useParams();
     const history = useHistory();
@@ -15,22 +15,22 @@ const Amount = ({positiveBalances, negativeBalances}) => {
     }
 
     return (
-        <div className="amount-container">
             <div className={params.amount >= 0 ? 'positive-amount-container' : 'negative-amount-container'}>
                 <div className="itens-amount">
-                    <div>
-                        <p className={params.amount >= 0 ? 'positive-us-params' : 'negative-us-params'}>U$</p>
-                        <p className="params-amount">{params.amount}</p>
+                    <div className="amount-and-description">
+                        <div className="params-amount">
+                            <p className={params.amount >= 0 ? 'positive-us-params' : 'negative-us-params'}>U$</p>
+                            <p className="params-amount">{params.amount}</p>
+                        </div>
+                        <div className="params-description">
+                            <p>{params.description}</p>
+                        </div>                       
                     </div>
                     <div>
                         <FiArrowLeft className="arrow-icon" onClick={handleBackButton} />
-                    </div>
-                    
+                    </div> 
                 </div>
-                
             </div>
-            
-        </div>
     );
 }
  

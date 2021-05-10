@@ -10,7 +10,7 @@ const NegativeBalance = ({negativeBalance, handleDeleteBalance}) => {
     const history = useHistory()
 
     const handleNegativeBalanceDetails = () => {
-        history.push(`/${negativeBalance.amount}`)
+        history.push(`/${negativeBalance.amount}/${negativeBalance.description}`)
     }
 
     return (

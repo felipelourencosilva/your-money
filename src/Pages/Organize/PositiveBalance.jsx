@@ -10,7 +10,7 @@ const PositiveBalance = ({positiveBalance, handleDeleteBalance}) => {
     const history = useHistory()
 
     const handlePositiveBalanceDetails = () => {
-        history.push(`/${positiveBalance.amount}`)
+        history.push(`/${positiveBalance.amount}/${positiveBalance.description === '' ? 'This value has no description' : positiveBalance.description}`)
     }
 
     return (

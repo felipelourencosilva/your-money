@@ -45,11 +45,12 @@ function App() {
     setBalances(newBalance);
   };
 
-  const Amounts = balances.reduce((negativeAmount,index) =>  negativeAmount = negativeAmount + Number(index.amount) , 0 )
+  const Amounts = balances.reduce(
+    (negativeAmount, index) =>
+      (negativeAmount = negativeAmount + Number(index.amount)),
+    0
+  );
 
-  console.log(Amounts);
- 
-  
   return (
     <Router>
       <div className="App">
@@ -74,7 +75,15 @@ function App() {
               </div>
             )}
           />
-          <Route path="/:amount" exact component={Amount} positiveBalances={positiveBalances} negativeBalances={negativeBalances} />
+          <Route
+            path="/:amount/:description"
+            exact
+            render={() => (
+              <div className="amount-container">
+                <Amount />
+              </div>
+            )}
+          />
         </Switch>
       </div>
     </Router>

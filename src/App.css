@@ -5,3 +5,9 @@
     display: flex;
     flex-direction: column;
 }
+.amount-container{
+    min-width: calc(100vw - 18vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
